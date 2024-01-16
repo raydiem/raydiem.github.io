@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-16 14:22",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://raydiem.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://raydiem.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "y4uwt1fadb",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Raydium™ | Home Official Site",
+        "meta_descr": "WebRaydium is a platform that enables users and projects to trade, swap, yield, and provide liquidity on Solana, a smart contract platform. It offers features such as order book AMM, …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://raydium.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/raydium.png\" alt=\"Raydium\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u1vWpfALRM",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://raydium.io/\" class=\"text-primary\">Raydium</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://raydium.io/\" class=\"text-primary\">Raydium</a>: Unveiling the Dynamics of a Decentralized Liquidity Protocol</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the fast-paced world of decentralized finance (DeFi), Raydium has emerged as a notable player, pioneering innovative solutions within the Solana ecosystem. This article delves into the intricacies of Raydium, exploring its origins, key features, and the impact it has had on decentralized liquidity provision and trading.\n<br>\n<br>The Genesis of <a href=\"https://raydium.io/\" class=\"text-primary\">Raydium</a>:\n<br>\n<br>Raydium was launched as part of the Serum ecosystem, which operates on the Solana blockchain. Co-founded by the FTX exchange team, Raydium was conceived with the vision of providing a decentralized liquidity protocol that addresses some of the challenges faced by decentralized exchanges (DEX) on other blockchain networks.\n<br>\n<br>Key Features of <a href=\"https://raydium.io/\" class=\"text-primary\">Raydium</a>:\n<br>\n<br>Automated Market Making (AMM):\n<br><a href=\"https://raydiem.github.io/\" class=\"text-primary\">Raydium</a> operates as an Automated Market Maker (AMM), allowing users to trade assets directly from their wallets. The platform utilizes liquidity pools to facilitate decentralized trading without the need for a traditional order book.\n<br>\n<br>Integration with Serum:\n<br><a href=\"https://raydiem.github.io/\" class=\"text-primary\">Raydium</a> is closely integrated with the Serum decentralized exchange, leveraging the order book functionality from Serum to enhance liquidity. This integration provides users with access to a deep and dynamic liquidity pool, fostering efficient and low-slippage trading.\n<br>\n<br>Dual Liquidity Pools:\n<br>Raydium introduced the concept of dual liquidity pools, combining the benefits of Serum's order book and Raydium's AMM. This dual approach enhances liquidity depth and provides users with flexibility in choosing their preferred trading methods.\n<br>\n<br>Yield Farming and Staking:\n<br>Raydium offers users the opportunity to participate in yield farming and staking activities. By providing liquidity to designated pools, users can earn additional rewards in the form of native tokens or other incentives. Staking options further allow users to earn rewards by locking up their tokens.\n<br>\n<br>Raydium Farms:\n<br>The platform features Raydium Farms, where users can stake their tokens to earn rewards. These farms are often associated with specific liquidity pools or projects within the Raydium ecosystem, providing users with diverse opportunities for yield generation.\n<br>\n<br>Cross-Chain Integration:\n<br>Raydium has expanded its reach through cross-chain integration. By connecting with other blockchain networks, Raydium aims to tap into a broader user base and facilitate the seamless movement of assets between different ecosystems.\n<br>\n<br>The Role of Raydium in Decentralized Finance:\n<br>\n<br>Raydium has played a significant role in shaping the decentralized finance landscape, particularly within the Solana ecosystem. Here are some key aspects of its impact:\n<br>\n<br>Solana's Scalability Advantage:\n<br>Operating on the Solana blockchain, Raydium benefits from the network's high throughput and low transaction costs. Solana's scalability advantage provides users with a fast and cost-effective trading experience, addressing some of the limitations seen on other blockchain networks.\n<br>\n<br>Liquidity Provision and Market Depth:\n<br>Raydium's integration with the Serum order book enhances liquidity provision and market depth. The combination of AMM and order book functionality creates a dynamic trading environment with improved liquidity, reducing slippage and improving overall trading efficiency.\n<br>\n<br>Ecosystem Expansion:\n<br>Raydium has actively contributed to the growth of the Solana ecosystem. Its integration with Serum and participation in cross-chain initiatives have expanded the reach of both Raydium and Solana, attracting a diverse range of projects and users to the ecosystem.\n<br>\n<br>Incentivizing Participation:\n<br>Through yield farming, staking, and other incentive programs, Raydium incentivizes user participation within its ecosystem. This not only attracts liquidity providers and traders but also fosters a vibrant and engaged community.\n<br>\n<br>Challenges and Considerations:\n<br>\n<br>While Raydium presents a compelling decentralized liquidity protocol, users should be mindful of certain challenges and considerations:\n<br>\n<br>Smart Contract Risks:\n<br>As with any DeFi platform, users should be aware of potential risks associated with smart contracts. While Raydium is designed with security in mind, it's essential for users to exercise due diligence and be cautious when interacting with decentralized protocols.\n<br>\n<br>Market Volatility:\n<br>The decentralized finance space is known for its market volatility. Users engaging in trading, yield farming, or staking activities should be prepared for price fluctuations and understand the inherent risks associated with cryptocurrency investments.\n<br>\n<br>Cross-Chain Integration Challenges:\n<br>Cross-chain integration, while offering expanded opportunities, may also introduce challenges related to interoperability and varying network conditions. Users should stay informed about the specifics of cross-chain transactions and associated risks.\n<br>\n<br>Conclusion:\n<br>\n<br>Raydium stands as a beacon of innovation within the Solana ecosystem, bringing forth a decentralized liquidity protocol that combines the strengths of AMM and order book functionality. Its impact on decentralized finance is evident through enhanced liquidity, efficient trading mechanisms, and a thriving ecosystem of yield farming and staking opportunities. As Raydium continues to evolve and contribute to the growth of the Solana blockchain, it exemplifies the dynamic nature of decentralized finance and its potential to revolutionize traditional financial systems.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u1vWq5LWOq",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
